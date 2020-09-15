@@ -13,4 +13,4 @@ python3 devserver.py
 serves a barebones webpage `index.html` which loads the compiled WASM and necessary JS glue code.
 
 ## Example
-The applet can be tested on https://www.musicofreason,de/mandelbrot.
+The applet can be tested on https://www.musicofreason.de/mandelbrot.
