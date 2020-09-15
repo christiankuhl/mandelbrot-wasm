@@ -1,2 +1,13 @@
 # mandelbrot-wasm
-Explorable Mandelbrot Fractal - written in Rust, compiled to WASM
+Explorable [Mandelbrot Fractal](https://en.wikipedia.org/wiki/Mandelbrot_set) - written in Rust, compiled to WASM
+
+![mandelbrot-rs](https://github.com/christiankuhl/mandelbrot-rs/raw/master/screenshot.png "mandelbrot-wasm")
+
+## Installation and usage
+
+```
+git clone https://github.com/christiankuhl/mandelbrot-wasm.git
+cd mandelbrot-wasm
+python3 devserver.py
+```
+serves a barebones webpage (`index.html`) which loads the compiled WASM and necessary JS glue code.
