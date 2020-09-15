@@ -1,22 +1,41 @@
-#container
-{
-  height: 680px;
+#container {
+  height: 655px;
   position: relative;
   width: 800px;
   margin: auto;
 }
-#mandelbrot-canvas
-{
-  width: 100%;
+
+#mandelbrot-canvas {
+  width: 800px;
+  height: 600px;
   cursor: crosshair;
 }
-#controls
-{
+
+#controls {
   bottom: 0;
-  left: 0;
+  right: 0;
   position: absolute;
-  width: 100%;
+  width: auto;
 }
+
+#controls > a {
+    background-color: whitesmoke;
+    border: 1px solid #d8d8d8 #d1d1d1 #bababa;
+    border-radius: 3px;
+    cursor: pointer;
+    color: black;
+    padding: 6px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: sans-serif;
+  }
+
+#controls > a:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 17px 20px 0 rgba(0,0,0,0.19);
+}
+
 .left, .right {
   cursor: pointer;
   position: absolute;
@@ -65,6 +84,10 @@
   border-radius: 0 3px 3px 0;
 }
 
-.left:hover, .right:hover, .up:hover, .down:hover {
-  background-color: rgba(0,0,0,0.8);
+.left:hover, .right:hover, .up:hover, .down:hover, #controls > a:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+#controls > a:hover {
+    background-color: rgba(0,0,0,0.1);
 }

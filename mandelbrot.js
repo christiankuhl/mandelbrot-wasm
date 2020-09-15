@@ -8,11 +8,9 @@ async function run() {
     const width = app.width();
     const height = app.height();
    
-    // Give the canvas room for all of our cells and a 1px border
-    // around each of them.
     const canvas = document.getElementById("mandelbrot-canvas");
-    canvas.height = 1024;
-    canvas.width = 768;
+    canvas.height = height;
+    canvas.width = width;
 
     const ctx = canvas.getContext('2d');
     const drawImage = () => {
@@ -66,6 +64,11 @@ async function run() {
 
     const reset = document.getElementById("reset");
     reset.onclick = () => { app.reset(); drawImage(); };
+
+    save = document.getElementById("save");
+    save.addEventListener('click', function (e) {
+        save.href = canvas.toDataURL('image/png');
+    });
 
 }
 
