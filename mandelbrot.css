@@ -1,0 +1,70 @@
+#container
+{
+  height: 680px;
+  position: relative;
+  width: 800px;
+  margin: auto;
+}
+#mandelbrot-canvas
+{
+  width: 100%;
+  cursor: crosshair;
+}
+#controls
+{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.left, .right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.up, .down {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  width: auto;
+  margin-top: -5px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.up {
+  top: 0;
+  transform: rotate(-90deg);
+  border-radius: 0 3px 3px 0;
+}
+
+.down {
+  bottom: 0;
+  margin-bottom: 50px;
+  transform: rotate(-90deg);
+  border-radius: 0 3px 3px 0;
+}
+
+.left:hover, .right:hover, .up:hover, .down:hover {
+  background-color: rgba(0,0,0,0.8);
+}
