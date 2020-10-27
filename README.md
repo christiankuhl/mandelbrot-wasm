@@ -8,6 +8,7 @@ Explorable [Mandelbrot Fractal](https://en.wikipedia.org/wiki/Mandelbrot_set) - 
 ```
 git clone https://github.com/christiankuhl/mandelbrot-wasm.git
 cd mandelbrot-wasm
+wasm-pack build --target web
 python3 devserver.py
 ```
 serves a barebones webpage `index.html` which loads the compiled WASM and necessary JS glue code.
